@@ -4,47 +4,80 @@
  * and open the template in the editor.
  */
 package Modelo;
-
-/**
- *
- * @author reverdan.sparinger
- */
+//App para calcular
 public class Controle
 {
-
-    public String calcular(String num1,String num2,String operacao)
+    //definido variaveis/
+    private String num1;
+    private String num2;
+    private String operacao;
+    private String Resposta;
+    private String Mensagem;
+    //construtor inserir codigo/
+    public Controle(String num1, String num2, String operacao)
     {
+        this.num1 = num1;
+        this.num2 = num2;
+        this.operacao = operacao;
+        calcular();
+    }
+    
+    
+    //logica do App/
+    public void calcular()
+    {
+        //uso de double/
+        this.Mensagem ="";
         Double n1 = 0.0, n2 = 0.0, resultado = 0.0;
-        String resposta ="";
+        
+        
         try
         {
-            n1 = Double.parseDouble(num1);
-            n2 = Double.parseDouble(num2); 
+            //uso de this/
+            n1 = Double.parseDouble(this.num1);
+            n2 = Double.parseDouble(this.num2); 
             if (operacao.equals("+"))
                 resultado = n1 + n2;
             if (operacao.equals("-"))
                 resultado = n1 - n2;
             if (operacao.equals("*"))
                 resultado = n1 * n2;
-                resposta = resultado.toString();
-            if (operacao.equals("/"))   
+            Mensagem = resultado.toString();
+            //se, se nao/
+            if (this.operacao.equals("/"))   
                 {
                     if (n2 == 0)
-                        resposta = "Divisão por 0";
+                        Mensagem = "Divisão por 0";
                     else
                     {
                         resultado = n1 / n2;
-                        resposta = resultado.toString();
+                        Mensagem = resultado.toString();
                     }
                 }    
                         
         }
+        //mensagem de erro/
         catch(NumberFormatException e)
         {
             
-            resposta = "erro de conversão";
+            Mensagem = "erro de conversão";
             
         }
-        return resposta.toString();
+       
     }
+        
+        //get resposta/
+
+        public String getResposta()
+        {
+            return Resposta;
+        }    
+        public String getMensagem()
+        {
+            return Mensagem;
+        }
+        
+
+    
 }
+

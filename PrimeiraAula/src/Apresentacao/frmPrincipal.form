@@ -24,8 +24,8 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="44" pref="44" max="-2" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="28" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="lblNumeroDois" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="txfPrimeiroNumero" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
@@ -34,26 +34,26 @@
                       <Component id="txfSegundoNumero" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="btnSomar" max="32767" attributes="0"/>
-                              <Component id="btnMultiplicar" max="32767" attributes="0"/>
+                              <Component id="btnSomar" min="-2" pref="79" max="-2" attributes="0"/>
+                              <Component id="btnMultiplicar" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="50" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="btnSubtrair" max="32767" attributes="0"/>
-                              <Component id="btnDividir" max="32767" attributes="0"/>
+                              <Component id="btnSubtrair" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnDividir" min="-2" pref="71" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
                   <Component id="lblResultado" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               <Component id="lblPrimeiroNumero" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
               <Component id="txfPrimeiroNumero" min="-2" max="-2" attributes="0"/>
@@ -71,7 +71,7 @@
                   <Component id="btnMultiplicar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnDividir" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="27" max="32767" attributes="0"/>
+              <EmptySpace pref="29" max="32767" attributes="0"/>
               <Component id="lblResultado" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
           </Group>
